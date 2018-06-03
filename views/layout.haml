@@ -1,0 +1,6 @@
+%html
+  %head
+    %link{:href => "/stylesheets/style.css", :rel => "stylesheet"}
+  %body
+    = partial '/templates/topbar', template_engine: :haml
+    = yield
