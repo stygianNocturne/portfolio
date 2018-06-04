@@ -1,6 +1,9 @@
 %html
   %head
-    %link{:href => "/stylesheets/style.css", :rel => "stylesheet"}
+    %link{:href => "/css/style.css", :rel => "stylesheet"}
+    %link{:href => "https://fonts.googleapis.com/css?family=Raleway", :rel => "stylesheet"}
   %body
     = partial '/templates/topbar', template_engine: :haml
-    = yield
+    = partial '/templates/navbar', template_engine: :haml
+    .content
+      = yield
