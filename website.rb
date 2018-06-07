@@ -17,3 +17,9 @@ namespace '/game_jams' do
     haml :'game_jams/uncanny_valley'
   end
 end
+
+namespace '/video_editing' do
+  get '/portal_trailer' do
+    haml :'video_editing/portal_trailer'
+  end
+end
